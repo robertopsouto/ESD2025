@@ -22,8 +22,7 @@ echo "Bechmark class problem: " $2
 ###################################
 #           COMPILER              #
 ###################################
-module load sequana/current
-module load openmpi/gnu/4.1.2+cuda-11.2_sequana
+module load openmpi/gnu/4.1.4_sequana 
 
 DIR=$PWD
 
@@ -32,7 +31,6 @@ class=${2}
 execfile="${bench}.${class}.x"
 BIN=$DIR/${execfile}
 
-export OMPI_MCA_opal_warn_on_missing_libcuda=0
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 cd $DIR
