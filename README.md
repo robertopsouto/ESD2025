@@ -1,1 +1,1 @@
-# Escola Supercomputador Santos Dumont 2024
+# Escola Supercomputador Santos Dumont 2025
